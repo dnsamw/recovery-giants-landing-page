@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Recovery Giants | Roadside Assistance</title>
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <div class="logo-container">
+          <a href="#">
+            <img src="./src/logo.png" class="logo" />
+          </a>
+          <div class="logo-text">Recovery Giants</div>
+        </div>
+        <div class="toggleMenu" onclick="menuToggle()"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="txtBox">
+          <h2>Roadside Assitance<br />& Towing Service</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis
+            officiis doloribus molestias praesentium? Nulla odio quos, nisi esse
+            quae dicta dolorem commodi eveniet officiis autem cum et ciatis
+            officiis doloribus molestias praesentium? Nulla odio quos, nisi
+            animi architecto fugit veritatis aperiam quaerat!
+          </p>
+          <a href="#">View All Services</a>
+        </div>
+        <div class="imgBox">
+          <img src="./src/repair_guy.png" alt="" class="tow" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="./src/tow_truck.png"
+            alt=""
+            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#12af87')"
+          />
+        </li>
+        <li>
+          <img
+            src="./src/flat_tyre.png"
+            alt=""
+            onclick="imageSlider('./src/tyre_guy.png');changeBgColor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="./src/sevice.png"
+            alt=""
+            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#1e1e1e')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="./src/fb.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/tw.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/ig.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
