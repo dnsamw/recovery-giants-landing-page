@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#111" />
@@ -35,7 +36,10 @@
       </header>
       <div class="content">
         <div class="txtBox">
-          <h2 id="title">Roadside Assitance<br />& Towing Service</h2>
+          <!-- <div id="typed-strings">
+            <h2>Roadside Assitance<br />& Towing Service</h2>
+          </div> -->
+          <span class="gig-title" id="typed" style="display: inline"></span>
           <p id="description">
             We provide a wide range of towing and roadside assistance services
             to our customers. These include emergency roadside assistance and
@@ -55,21 +59,21 @@
           <img
             src="./src/tow_truck.png"
             alt=""
-            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#12af87')"
+            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#12af87');"
           />
         </li>
         <li>
           <img
             src="./src/flat_tyre.png"
             alt=""
-            onclick="imageSlider('./src/tyre_guy.png');changeBgColor('#0062be')"
+            onclick="imageSlider('./src/tyre_guy.png');changeBgColor('#0062be');"
           />
         </li>
         <li>
           <img
             src="./src/sevice.png"
             alt=""
-            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#1e1e1e')"
+            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#1e1e1e');"
           />
         </li>
       </ul>
@@ -86,5 +90,30 @@
       </ul>
     </section>
     <script src="./script.js"></script>
+
+    <script>
+      function typeAnimate(params) {
+        let typed = new Typed("#typed", {
+          // stringsElement: "#typed-strings",
+          strings: [
+            "Roadside Assitance and Towing Service",
+            "Engine Troubleshoot and Fix Issues",
+            "Flat Tyre Change and Wheel Alignment",
+          ],
+          backSpeed: 80,
+          typeSpeed: 80,
+          loop: true,
+          loopCount: Infinity,
+          backDelay: 2500,
+          startDelay: 500,
+          onDestroy: (self) => {},
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("ready!");
+        typeAnimate();
+      });
+    </script>
   </body>
 </html>

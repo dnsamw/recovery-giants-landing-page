@@ -173,6 +173,21 @@ header ul li a{
     transform: scale(0.6);
 }
 
+.gig-title{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.typed-cursor{
+    font-size: 3rem;
+    opacity: 1;
+    color: #fff;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
 @media (max-width:991px){
     section{
         padding: 40px;
@@ -267,9 +282,15 @@ header ul li a{
         padding-right: 0;
         margin-top: 50px;
         justify-content: center;
+
     }
     .content .imgBox img{
         min-width: 150px;
+        transition: 0.5s;
+        /* transition-delay: 0.5s; */
+    }
+    .content .imgBox img:hover{
+        /* transform: scale(0); */
     }
 
     .thumb li img{
