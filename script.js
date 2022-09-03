@@ -9,7 +9,7 @@ function changeBgColor(color) {
       desc: "We provide a wide range of towing and roadside assistance services to our customers. These include emergency roadside assistance and maintenance. Nulla odio quos, nisi esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis officiis doloribus molestias praesentium? Nulla odio quos, nisi animi architecto fugit veritatis aperiam quaerat",
     },
     troubleShoot: {
-      title: "Engine troubleshoot<br />& Fix issues",
+      title: "Engine troubles<br />& Fix issues",
       desc: "We also provide various other car related services such as engine repairs and maintenance. Our experienced technicians are able to handle all types of vehicle issues.Nulla odio quos, nisi esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis officiis doloribus molestias praesentium? Nulla odio quos, nisi animi architecto fugit veritatis aperiam quaerat",
     },
     flatTyre: {
