@@ -17,41 +17,36 @@
     <title>Recovery Giants | Roadside Assistance</title>
   </head>
   <body>
+    <!-- Section 1 -->
     <section class="sec">
       <header>
         <div class="logo-container">
-          <a href="#">
+          <a href="/">
             <img src="./src/logo.png" class="logo" />
           </a>
           <div class="logo-text">Recovery Giants</div>
         </div>
         <div class="toggleMenu" onclick="menuToggle()"></div>
         <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">What's New</a></li>
-          <li><a href="#">Newsletter</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#Breakdown">Services</a></li>
+          <li><a href="#LocalGarage">What's New</a></li>
+          <li><a href="#AppDownload">Newsletter</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </header>
       <div class="content">
         <div class="txtBox">
-          <!-- <div id="typed-strings">
-            <h2>Roadside Assitance<br />& Towing Service</h2>
-          </div> -->
-          <span class="gig-title" id="typed" style="display: inline"></span>
+          <h2 class="bold-heading">
+            Looking for Recovery, Rescue or Transport?
+          </h2>
           <p id="description">
-            We provide a wide range of towing and roadside assistance services
-            to our customers. These include emergency roadside assistance and
-            maintenance. Nulla odio quos, nisi esse quae dicta dolorem commodi
-            eveniet officiis autem cum et ciatis officiis doloribus molestias
-            praesentium? Nulla odio quos, nisi animi architecto fugit veritatis
-            aperiam quaerat
+            Look no further than Day & Night 24/7 Recovery.
           </p>
-          <a href="#">View All Services</a>
+          <a href="#">Get a free quote</a>
         </div>
         <div class="imgBox">
-          <img src="./src/repair_guy.png" alt="" class="tow" />
+          <img src="./src/tyre_stack.png" alt="" class="tow" />
         </div>
       </div>
       <ul class="thumb">
@@ -59,7 +54,7 @@
           <img
             src="./src/tow_truck.png"
             alt=""
-            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#12af87');"
+            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#12af87');"
           />
         </li>
         <li>
@@ -73,7 +68,7 @@
           <img
             src="./src/sevice.png"
             alt=""
-            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#1e1e1e');"
+            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#1e1e1e');"
           />
         </li>
       </ul>
@@ -89,6 +84,171 @@
         </li>
       </ul>
     </section>
+
+    <!-- Section 2 -->
+    <section class="sec-banner">
+      <div class="banner-row">
+        <div class="small-12 medium-4 columns">
+          <div class="row">
+            <div class="small-2 columns">
+              <img src="./src/devices.png" alt="Devices Icon" />
+            </div>
+            <div class="small-10 columns">
+              <p>
+                Save up to 40% - get your cover online instead of over the phone
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <div class="row">
+            <div class="small-2 columns">
+              <img src="./src/trophy.png" alt="Trophy Icon" />
+            </div>
+            <div class="small-10 columns">
+              <p>
+                Recovery Giants named as 2022's Best Breakdown Cover Provider
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <div class="row">
+            <div class="small-2 columns">
+              <img src="./src/bike.png" alt="Motorcycle Icon" />
+            </div>
+            <div class="small-10 columns">
+              <p>
+                Cars, EVs, motorbikes, light vans - we've got them all covered
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="Breakdown" class="sec-info">
+      <div>
+        <div class="headingBox">
+          <h2 class="bold-heading-dark">Looking for breakdown cover?</h2>
+        </div>
+        <div class="cardContainer">
+          <div class="card">
+            <span>
+              <img src="./src/tow_truck.png" alt="" />
+            </span>
+            <h3>UK breakdown cover</h3>
+            <p>
+              24/7 cover, 365 days a year.<br /><br />
+              This is breakdown cover you can always count on
+            </p>
+            <a class="btn-info">Learn more</a>
+          </div>
+
+          <div class="card">
+            <span>
+              <img src="./src/europe.png" alt="" />
+            </span>
+            <h3>European breakdown cover</h3>
+            <p>
+              Heading to the continent? <br /><br />
+              Whether it's one trip or multiple, we'll be there to help.
+            </p>
+            <a class="btn-info">Learn more</a>
+          </div>
+
+          <div class="card">
+            <span>
+              <img src="./src/company.png" alt="" />
+            </span>
+            <h3>Business breakdown cover</h3>
+            <p>
+              Get your fleet covered today.<br /><br />
+              Because there's no business without 'u' and 'i'.
+            </p>
+            <a class="btn-info">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="LocalGarage" class="sec-info">
+      <div class="txtBox">
+        <h2 class="bold-heading-dark">
+          We'll help you find a quality local garage.
+        </h2>
+        
+        <div class="card">
+          <span>
+            <img src="./src/garage.png" alt="" />
+          </span>
+          <h3>Need a service, MOT, or repair?</h3>
+          <p>
+            You need a garage you can count on.<br>We can help with that.
+          </p>
+          <a class="btn-info">Learn more</a>
+        </div>
+      </div>
+      <div class="imgBox">
+        <img src="./src/repair_guy.png" alt="" class="tow" />
+      </div>
+    </div>
+    </section>
+   
+    <!-- Section 5 -->
+    <section id="AppDownload" class="sec-info-lime">
+      <div class="imgBox">
+        <img id="appimg" src="./src/phone_mockup.png" alt="" class="tow" />
+      </div>
+      <div class="txtBox">
+        <h2 class="bold-heading-dark">
+          Need some help?
+        </h2>
+        
+        <div class="cardContainer">
+          
+          <div class="card-green">
+            <span>
+              <img src="./src/app.png" alt="" />
+            </span>
+            <h3>Recovery Giants App</h3>
+            <p>
+              Download our free app to request a rescue and live-track your technician in just a few taps.
+            </p>
+            <a class="btn-download">Download</a>
+          </div>
+          
+          <div class="card-green">
+            <span>
+              <img src="./src/contact.png" alt="" />
+            </span>
+            <h3>Contact us</h3>
+            <p>
+              Whether you've broken down or need to make a change to your policy, it's easy to get in touch.
+            </p>
+            <a class="btn-download">Call</a>
+          </div>
+          
+          <div class="card-green">
+            <span>
+              <img src="./src/contact.png" alt="" />
+            </span>
+            <h3>Policy booklets</h3>
+            <p>
+              Hosting a niche quiz about our cover? Our policy booklets explain all the important info.
+            </p>
+            <a class="btn-download">Learn more</a>
+          </div>
+
+        </div>
+
+        
+      </div>
+    </div>
+    </section>
+
     <script src="./script.js"></script>
 
     <script>
