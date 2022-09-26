@@ -4,116 +4,412 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#111" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#111" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#111" />
-
-    <title>Recovery Giants | Roadside Assistance</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      href="https://file.myfontastic.com/UyXozab9Ug473TKtZ662gM/icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Recovery Giants</title>
   </head>
   <body>
-    <section class="sec">
-      <header>
+    <div class="chat-button">
+      <i class="icon-dnsam-chat"></i>
+    </div>
+    <header class="section" id="Home">
+      <nav>
         <div class="logo-container">
-          <a href="#">
-            <img src="./src/logo.png" class="logo" />
+          <a href="/">
+            <img src="./images/logo_.png" class="logo spin" />
           </a>
           <div class="logo-text">Recovery Giants</div>
         </div>
-        <div class="toggleMenu" onclick="menuToggle()"></div>
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">What's New</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="navigation" id="toggleMenu">
+          <li><a class="menu-item" href="#Home">Home</a></li>
+          <li><a class="menu-item" href="#Services">Services</a></li>
+          <li><a class="menu-item" href="#Testimonials">Testimonials</a></li>
+          <li><a class="menu-item" href="#Help">Help</a></li>
+          <li><a class="menu-item" href="#Contact">Contact</a></li>
         </ul>
-      </header>
-      <div class="content">
-        <div class="txtBox">
-          <!-- <div id="typed-strings">
-            <h2>Roadside Assitance<br />& Towing Service</h2>
-          </div> -->
-          <span class="gig-title" id="typed" style="display: inline"></span>
-          <p id="description">
-            We provide a wide range of towing and roadside assistance services
-            to our customers. These include emergency roadside assistance and
-            maintenance. Nulla odio quos, nisi esse quae dicta dolorem commodi
-            eveniet officiis autem cum et ciatis officiis doloribus molestias
-            praesentium? Nulla odio quos, nisi animi architecto fugit veritatis
-            aperiam quaerat
-          </p>
-          <a href="#">View All Services</a>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </nav>
+      <div class="hero-text">
+        <h1>
+          Roadside Recovery, <br />
+          Rescue & Transport
+        </h1>
+        <p>We're here when you need us 24/7</p>
+        <a href="#">Get a free quote</a>
+      </div>
+      <div class="main-image">
+        <img src="./images/hero-img_1.png" alt="" srcset="" />
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner-col">
+        <div class="circle">
+          <i class="icon-dnsam-24"></i>
         </div>
-        <div class="imgBox">
-          <img src="./src/repair_guy.png" alt="" class="tow" />
+        <p>
+          24x7 Recovery We are always <br />
+          here for you.
+        </p>
+      </div>
+
+      <div class="banner-col">
+        <div class="circle">
+          <i class="icon-dnsam-bike"></i>
+        </div>
+        <p>
+          Cars, Evs, motorbikes, ligte vans. <br />We’ve got them all covered.
+        </p>
+      </div>
+    </div>
+
+    <!-- OUR SERVICES -->
+    <div class="section" id="Services">
+      <div>
+        <div class="heading-box">
+          <h2 class="bold-heading-dark">Our Services</h2>
+        </div>
+        <div class="cards-holder">
+          <div class="card-row">
+            <div class="card secondary-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-floodcar"></i>
+              </div>
+              <h4>24/7 Rescue</h4>
+              <p>
+                Stuck on the road without cover? Not a problem! We've got a wide
+                range of services that can help you get back on your way. We
+                also offer competitive pricing, so you can get the help you need
+                without breaking the bank.
+              </p>
+            </div>
+            <div class="card secondary-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-porsche"></i>
+              </div>
+              <h4>Collection / Delivery</h4>
+              <p>
+                If you're looking for a hassle-free way to get your car from
+                point A to point B, look no further than our vehicle collection
+                and delivery service. We'll pick up your car from your home or
+                office and deliver it to your destination safely and on time.
+              </p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card secondary-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-vehiclelock"></i>
+              </div>
+              <h4>Secure Storage</h4>
+              <p>
+                If you are looking for a safe and secure way to store your
+                vehicle, look no further than our vehicle secure storage
+                service. We offer a variety of features that are designed to
+                keep your car safe and sound. You can rest assured that your
+                vehicle will be well-protected while it is stored with us.
+              </p>
+            </div>
+            <div class="card secondary-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-ev"></i>
+              </div>
+              <h4>Secure Storage</h4>
+              <p>
+                If you are looking for a safe and secure way to store your
+                vehicle, look no further than our vehicle secure storage
+                service. We offer a variety of features that are designed to
+                keep your car safe and sound. You can rest assured that your
+                vehicle will be well-protected while it is stored with us.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <ul class="thumb">
-        <li>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="section" id="Testimonials">
+      <div>
+        <div class="heading-box">
+          <h2 class="bold-heading-dark">Testimonials</h2>
+        </div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile1.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile2.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile3.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile4.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile5.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile6.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile7.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile8.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="images/profile9.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEED HELP -->
+    <div class="section" id="Help">
+      <div>
+        <div class="heading-box">
+          <h2 class="bold-heading-dark">Need Some Help?</h2>
+        </div>
+        <div class="cards-holder">
+          <div class="card-row">
+            <div class="card primary-card" id="app-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-appstore"></i>
+                <i class="icon-dnsam-gp"></i>
+              </div>
+              <h4>Mobile App</h4>
+              <p>
+                Recovery Giants App will be available soon on Google Play and
+                App store.
+              </p>
+            </div>
+            <div class="card secondary-card" id="emergency-card">
+              <h4>Require Emergency Assistance? Get in touch with us.</h4>
+
+              <div class="form-container">
+                <form action="" method="get">
+                  <div class="input-field">
+                    <label for="email">E-mail:</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="eg: janedoe@mailserver.com"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="message">Message :</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Tell us any relevant information about the vehicle: running, shell, more than one vehicle to transport..."
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn-dark">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HELPING MOTORISTS -->
+    <div class="section" id="Contact">
+      <div>
+        <div class="heading-box">
+          <h2 class="bold-heading-dark">Helping Motorists for Over a Decade</h2>
+        </div>
+        <div class="cards-holder">
+          <div class="card-row">
+            <div class="card primary-card">
+              <div class="card-icon">
+                <i class="icon-dnsam-car-service"></i>
+              </div>
+              <p>
+                We are a team of highly trained and experienced professionals
+                who are dedicated to providing the best possible service to our
+                clients. We understand that when your vehicle breaks down, it
+                can be a very stressful and emotional time. <br />
+              </p>
+
+              <p>
+                That's why we do everything we can to make the process as easy
+                and stress-free as possible. <br />
+              </p>
+              <p>
+                We offer a wide range of services, including breakdown recovery,
+                vehicle collection and transportation, and secure storage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="img-box">
+          <img src="./images/mechanics.png" alt="Mechanics" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="logo-container footer-logo">
+        <a href="/">
+          <img src="./images/logo_.png" class="logo" />
+        </a>
+        <div class="logo-text">Recovery Giants</div>
+      </div>
+      <div class="footer-text">
+        <span>Privacy Policy | All Rights Reserved © Recovery Giants 2022</span>
+        <div class="social">
+          <i class="icon-dnsam-fb"></i>
+          <i class="icon-dnsam-twitter"></i>
+          <i class="icon-dnsam-ig"></i>
+          <span>Powered by </span>
           <img
-            src="./src/tow_truck.png"
-            alt=""
-            onclick="imageSlider('./src/repair_guy.png');changeBgColor('#12af87');"
+            id="chimp-icon"
+            src="./images/chimp-icon.png"
+            alt="Orderchimps"
           />
-        </li>
-        <li>
-          <img
-            src="./src/flat_tyre.png"
-            alt=""
-            onclick="imageSlider('./src/tyre_guy.png');changeBgColor('#0062be');"
-          />
-        </li>
-        <li>
-          <img
-            src="./src/sevice.png"
-            alt=""
-            onclick="imageSlider('./src/tyre_stack.png');changeBgColor('#1e1e1e');"
-          />
-        </li>
-      </ul>
-      <ul class="sci">
-        <li>
-          <a href="#"><img src="./src/fb.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./src/tw.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./src/ig.png" alt="" /></a>
-        </li>
-      </ul>
-    </section>
+          <span>Orderchimps</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-
-    <script>
-      function typeAnimate(params) {
-        let typed = new Typed("#typed", {
-          // stringsElement: "#typed-strings",
-          strings: [
-            "Roadside Assitance and Towing Service",
-            "Engine Troubleshoot and Fix Issues",
-            "Flat Tyre Change and Wheel Alignment",
-          ],
-          backSpeed: 80,
-          typeSpeed: 80,
-          loop: true,
-          loopCount: Infinity,
-          backDelay: 2500,
-          startDelay: 500,
-          onDestroy: (self) => {},
-        });
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        console.log("ready!");
-        typeAnimate();
-      });
-    </script>
   </body>
 </html>

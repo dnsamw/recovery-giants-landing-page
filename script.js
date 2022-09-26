@@ -1,47 +1,57 @@
-function imageSlider(any) {
-  document.querySelector(".tow").src = any;
-}
+//hamburger
+window.onload = function () {
+  window.addEventListener("scroll", function (e) {
+    if (window.pageYOffset > 100) {
+      document.querySelector("header").classList.add("is-scrolling");
+    } else {
+      document.querySelector("header").classList.remove("is-scrolling");
+    }
+  });
 
-function changeBgColor(color) {
-  const data = {
-    tow: {
-      title: "Roadside Assitance<br />& Towing Service",
-      desc: "We provide a wide range of towing and roadside assistance services to our customers. These include emergency roadside assistance and maintenance. Nulla odio quos, nisi esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis officiis doloribus molestias praesentium? Nulla odio quos, nisi animi architecto fugit veritatis aperiam quaerat",
+  const menu_btn = document.querySelector(".hamburger");
+  const mobile_menu = document.querySelector("#toggleMenu");
+  const menu_items = document.querySelectorAll(".menu-item");
+
+  for (i of menu_items) {
+    i.addEventListener("click", () => {
+      mobile_menu.classList.toggle("is-active");
+      menu_btn.classList.toggle("is-active");
+    });
+  }
+
+  menu_btn.addEventListener("click", function () {
+    menu_btn.classList.toggle("is-active");
+    mobile_menu.classList.toggle("is-active");
+  });
+};
+
+//Testimonials Swiper
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    troubleShoot: {
-      title: "Engine troubles<br />& Fix issues",
-      desc: "We also provide various other car related services such as engine repairs and maintenance. Our experienced technicians are able to handle all types of vehicle issues.Nulla odio quos, nisi esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis officiis doloribus molestias praesentium? Nulla odio quos, nisi animi architecto fugit veritatis aperiam quaerat",
+    520: {
+      slidesPerView: 2,
     },
-    flatTyre: {
-      title: "Flat tyre change<br />& wheel alignment",
-      desc: "Flat tyre change and wheel alignment. emergency breakdown service. Our experienced technicians are able to handle all types of vehicle issues. Nulla odio quos, nisi esse quae dicta dolorem commodi eveniet officiis autem cum et ciatis officiis doloribus molestias praesentium? Nulla odio quos, nisi animi architecto fugit veritatis aperiam quaerat",
+    950: {
+      slidesPerView: 3,
     },
-  };
-  const elTitle = document.querySelector(".gig-title");
-  const elDesc = document.querySelector("#description");
-
-  // if (color === "#12af87") {
-  //   elTitle.innerHTML = data.tow.title;
-  //   elDesc.innerHTML = data.tow.desc;
-  // }
-  // if (color === "#0062be") {
-  //   elTitle.innerHTML = data.troubleShoot.title;
-  //   elDesc.innerHTML = data.troubleShoot.desc;
-  // }
-
-  // if (color === "#1e1e1e") {
-  //   elTitle.innerHTML = data.flatTyre.title;
-  //   elDesc.innerHTML = data.flatTyre.desc;
-  // }
-
-  console.log(color);
-  const sec = document.querySelector(".sec");
-  sec.style.background = color;
-}
-
-function menuToggle() {
-  const toggleMenu = document.querySelector(".toggleMenu");
-  const navigation = document.querySelector(".navigation");
-  toggleMenu.classList.toggle("active");
-  navigation.classList.toggle("active");
-}
+  },
+});
