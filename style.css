@@ -1157,6 +1157,18 @@ nav{
   transition: 0.5s;
 }
 
+.form textarea{
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 5px;
+  transition: 0.2s;
+  padding: 5px;
+}
+
+.form textarea:focus{
+  outline: none;
+}
+
 .container form input{
   width: 100%;
   padding: 10px 5px;
