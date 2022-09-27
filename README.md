@@ -8,7 +8,12 @@ Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---
 
 - favicon. ✔️
 - PWA Experience.
-- SEO Metatags and OG data.
+- SEO Metatags ✔️
+
+  - Primary metatags ✔️
+  - Fb oprn graph tags ✔️
+  - twitter tags ✔️
+
 - 3rd party chat app intergration.
 - Form input validation from fromt end.
 - Write a php script to handle form submission.
