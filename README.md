@@ -11,13 +11,13 @@ Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---
 - SEO Metatags ✔️
 
   - Primary metatags ✔️
-  - Fb oprn graph tags ✔️
+  - Fb open graph tags ✔️
   - twitter tags ✔️
 
 - 3rd party chat app intergration.
 - Form input validation from fromt end.
 - Write a php script to handle form submission.
-  Reqiorement : send HTML form data to a direct mail address and at the same time a confirmation email should be sent to client on form submission.
+  Requirement : send HTML form data to a direct mail address and at the same time a confirmation email should be sent to client on form submission.
 
 - Test all the media queries against different browsers and devices.
 
