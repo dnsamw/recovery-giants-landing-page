@@ -2,6 +2,8 @@
 
 Responsive landing page for recovery giants
 
+Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---Website-Prototype?node-id=0%3A1
+
 #TODO
 
 - favicon. ✔️
