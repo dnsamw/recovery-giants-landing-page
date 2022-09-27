@@ -41,40 +41,52 @@
           <h4>Get a free quote.</h4>
           <div class="form-container">
             <div class="container">
-              <form id="Form1" action="#">
-                <h3>Vehicle Details</h3>
-                <input type="text" placeholder="Collection address" required />
-                <input type="text" placeholder="Dilivery address" required />
-                <input type="text" placeholder="Date" required />
-                <input type="text" placeholder="Time" required />
-                <div class="btn-box">
-                  <button type="button" id="next1">Next</button>
+              <form action="">
+                <div id="Form1" class="form">
+                  <h3>Vehicle Details</h3>
+                  <input
+                    name="address_from"
+                    type="text"
+                    placeholder="Collection address"
+                    required
+                  />
+                  <input
+                    name="address_to"
+                    type="text"
+                    placeholder="Dilivery address"
+                    required
+                  />
+                  <input name="date" type="text" placeholder="Date" required />
+                  <input name="time" type="text" placeholder="Time" required />
+                  <div class="btn-box">
+                    <button type="button" id="next1">Next</button>
+                  </div>
                 </div>
-              </form>
 
-              <form id="Form2" action="#">
-                <h3>Contact Information</h3>
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Phone Number" />
-                <input type="email" placeholder="E-mail" />
-                <div class="btn-box">
-                  <button type="button" id="back1">Back</button>
-                  <button type="button" id="next2">Next</button>
+                <div id="Form2" class="form">
+                  <h3>Contact Information</h3>
+                  <input name="name" type="text" placeholder="Name" />
+                  <input name="phone" type="text" placeholder="Phone Number" />
+                  <input name="email" type="email" placeholder="E-mail" />
+                  <div class="btn-box">
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="next2">Next</button>
+                  </div>
                 </div>
-              </form>
 
-              <form id="Form3" action="#">
-                <h3>Additional Comments</h3>
-                <textarea
-                  name="comments"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Let us know of any additional information or special instructions."
-                ></textarea>
-                <div class="btn-box">
-                  <button type="button" id="back2">Back</button>
-                  <button type="submit">Submit</button>
+                <div id="Form3" class="form">
+                  <h3>Additional Comments</h3>
+                  <textarea
+                    name="comment"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Let us know of any additional information or special instructions."
+                  ></textarea>
+                  <div class="btn-box">
+                    <button type="button" id="back2">Back</button>
+                    <button type="submit">Submit</button>
+                  </div>
                 </div>
               </form>
 

@@ -905,15 +905,11 @@ nav ul li a:hover{
 /* BREAKING POINT 6 */
 @media screen and (max-width: 640px) {
   .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   .hero-text P {
-    font-size: 1.2rem;
-  }
-
-  .banner-col p{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .banner{
@@ -1145,7 +1141,15 @@ nav{
   color: #777;
 }
 
-.container form{
+/* .container form{
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 0.5s;
+} */
+
+.form{
   width: 280px;
   position: absolute;
   top: 100px;
