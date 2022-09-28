@@ -515,6 +515,12 @@ nav ul li a:hover{
     margin-bottom: -10px;
 }
 
+.card-icon i>img{
+  padding: 15px 0;
+  min-width: 45px;
+  width: 12%;
+}
+
 
 /* HERO */
 .hero-text{
