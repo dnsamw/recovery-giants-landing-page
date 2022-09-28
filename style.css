@@ -733,6 +733,16 @@ nav ul li a:hover{
     max-width: 650px;
   }
 
+.footer-text span a:link {
+    text-decoration: none;
+}
+.footer-text span a:hover {
+  text-decoration: none;
+}
+.footer-text span a:visited {
+  color: #777;
+}
+
 /* MEDIA QUERY - BREAKING POINT 1*/
 @media (max-width:1085px){
   .hero-text h1 {
@@ -1246,7 +1256,7 @@ nav{
 
 .btn-box{
   width: 100%;
-  margin: 30px auto;
+  margin: 15px auto;
   text-align: center;
 }
 
