@@ -114,7 +114,7 @@
           <h4>GET A FREE QUOTE</h4>
           <div class="form-container">
             <div class="container">
-              <form action="" class="q-form">
+              <form action="" class="q-form" method="get">
                 <div id="Form1" class="form">
                   <h3>Vehicle Details</h3>
                   <div class="input-group">
@@ -123,7 +123,6 @@
                       id="reg_number"
                       type="text"
                       placeholder="Vehicle registration"
-                      required
                     />
                     <span class="error-message"></span>
                     <svg
@@ -159,6 +158,7 @@
                     rows="10"
                     placeholder="Tell us any relevant information about the vehicle: running, shell, more than one vehicle to transport..."
                   ></textarea>
+                  <span class="error-message" id="error-f1"></span>
                   <div class="btn-box">
                     <button type="button" id="next1">Next</button>
                   </div>
@@ -172,7 +172,6 @@
                       id="address_from"
                       type="text"
                       placeholder="Collection address"
-                      required
                     />
                     <span class="error-message"></span>
                     <svg
@@ -208,7 +207,6 @@
                       id="address_to"
                       type="text"
                       placeholder="Dilivery address"
-                      required
                     />
                     <span class="error-message"></span>
                     <svg
@@ -243,7 +241,6 @@
                       id="date"
                       type="date"
                       placeholder="Date"
-                      required
                     />
                     <span class="error-message"></span>
                     <svg
@@ -278,7 +275,6 @@
                       id="time"
                       type="time"
                       placeholder="Time"
-                      required
                     />
                     <span class="error-message"></span>
                     <svg
@@ -307,6 +303,7 @@
                       />
                     </svg>
                   </div>
+                  <span class="error-message" id="error-f2"></span>
                   <div class="btn-box">
                     <button type="button" id="back1">Back</button>
                     <button type="button" id="next2">Next</button>
@@ -424,9 +421,10 @@
                     rows="5"
                     placeholder="Let us know of any additional information or special instructions."
                   ></textarea>
+                  <span class="error-message" id="error-f3"></span>
                   <div class="btn-box">
                     <button type="button" id="back2">Back</button>
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit-btn">Submit</button>
                   </div>
                 </div>
               </form>

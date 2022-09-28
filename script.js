@@ -57,15 +57,35 @@ window.onload = function () {
   // };
 
   next1.onclick = function () {
-    form1.style.left = "-450px";
-    form2.style.left = "40px";
-    progress.style.width = "240px";
+    const form1data = [...Form1.querySelectorAll("input")];
+    const error = document.querySelector("#error-f1");
+    const result = form1data.every((input) => {
+      return input.value !== "";
+    });
+
+    if (result) {
+      form1.style.left = "-450px";
+      form2.style.left = "40px";
+      progress.style.width = "240px";
+    } else {
+      error.innerText = "please fill the required fileds.";
+    }
   };
 
   next2.onclick = function () {
-    form2.style.left = "-450px";
-    form3.style.left = "40px";
-    progress.style.width = "360px";
+    const form2data = [...Form2.querySelectorAll("input")];
+    const error = document.querySelector("#error-f2");
+    const result = form2data.every((input) => {
+      return input.value !== "";
+    });
+
+    if (result) {
+      form2.style.left = "-450px";
+      form3.style.left = "40px";
+      progress.style.width = "360px";
+    } else {
+      error.innerText = "please fill the required fileds.";
+    }
   };
 
   back1.onclick = function () {
@@ -129,11 +149,21 @@ class FormValidator {
     let self = this;
 
     this.form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      self.fields.forEach((field) => {
-        const input = document.querySelector(`#${field}`);
-        self.validateFields(input);
+      const form3data = [...Form3.querySelectorAll("input")];
+      const error = document.querySelector("#error-f3");
+      const result = form3data.every((input) => {
+        return input.value !== "";
       });
+
+      if (result) {
+        self.fields.forEach((field) => {
+          const input = document.querySelector(`#${field}`);
+          self.validateFields(input);
+        });
+      } else {
+        error.innerText = "please fill the required fileds.";
+        e.preventDefault();
+      }
     });
   }
 
@@ -152,11 +182,8 @@ class FormValidator {
   validateFields(field) {
     // Check presence of values
     if (field.value.trim() === "") {
-      this.setStatus(
-        field,
-        `${field.previousElementSibling.innerText} cannot be blank`,
-        "error"
-      );
+      //console.log(field);
+      this.setStatus(field, `${field.innerText} cannot be blank`, "error");
     } else {
       this.setStatus(field, null, "success");
     }

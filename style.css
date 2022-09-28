@@ -993,9 +993,9 @@ nav{
 }
 
 /*QUOTE FORM*/
-.card{
-  /* margin: 0; */
-}
+/* .card{
+  margin: 0;
+} */
 .quote-form-container .card {
   top: 0;
 }
@@ -1185,6 +1185,10 @@ nav{
     fill: var(--primary);
 }
   
+.error-message{
+  color: var(--error);
+  font-size: smaller;
+}
   .icon.icon-error {
     fill: var(--error);
  }

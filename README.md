@@ -4,20 +4,18 @@ Responsive landing page for recovery giants
 
 Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---Website-Prototype?node-id=0%3A1
 
-#TODO
+# TODO
 
 - favicon. ✔️
-- PWA Experience.
 - SEO Metatags ✔️
 
   - Primary metatags ✔️
   - Fb open graph tags ✔️
   - twitter tags ✔️
 
-- 3rd party chat app intergration.
-- Form input validation from fromt end.
+- Form input validation from fromt end ✔️
   - input validation ✔️
-  - submit validation ..
+  - submit validation ✔️
 - Write a php script to handle form submission.
   Requirement : send HTML form data to a direct mail address and at the same time a confirmation email should be sent to client on form submission.
 
@@ -33,3 +31,5 @@ Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---
 - Testimonials real data.
 - Bundle all the js and css and minify them.
 - optimize images.
+- 3rd party chat app intergration.
+- Spinning wheels
