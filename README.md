@@ -28,7 +28,7 @@ Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---
   - safari ios ?
   - safari mac ?
 
-- Testimonials real data.
+- Testimonials real data.✔️
 - Bundle all the js and css and minify them.
 - optimize images.
 - 3rd party chat app intergration.

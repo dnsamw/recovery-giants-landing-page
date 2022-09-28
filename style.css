@@ -645,6 +645,13 @@ nav ul li a:hover{
     background: var(--primary);
    }
 
+   .swiper-slide{
+    min-height: 450px;
+   }
+
+   .swiper-slide .card-content .description{
+    padding-top: 15px;
+   }
 
   .swiper-navBtn{
     color: #b4b4b4;
