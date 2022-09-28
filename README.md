@@ -16,6 +16,8 @@ Prototype : https://www.figma.com/file/eXocXkVfJ9kKlzGP8qfZjN/Recovery-Giants---
 
 - 3rd party chat app intergration.
 - Form input validation from fromt end.
+  - input validation ✔️
+  - submit validation ..
 - Write a php script to handle form submission.
   Requirement : send HTML form data to a direct mail address and at the same time a confirmation email should be sent to client on form submission.
 

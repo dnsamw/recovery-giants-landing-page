@@ -1,6 +1,7 @@
 /* COLOR VARIABLES */
 :root {
     --primary: #20b678;
+    --error: rgb(230, 31, 97);
     --seconday:hsl(0, 0%, 96%);
     --lime: #DCF8EC;
     --white:hsl(0, 0%, 100%);
@@ -674,8 +675,9 @@ nav ul li a:hover{
   /*GET A FREE QUOTE FORM*/
   .quote-form-container{
     position: fixed;
+    
     background: #111;
-    height: 100vh;
+    height: 0vh;
     width: 100%;
     z-index: 9999;
     background: rgba(20, 20, 20, 0.315);
@@ -684,13 +686,27 @@ nav ul li a:hover{
     padding-top:120px;
     -webkit-transition:0.4s;
     transition:0.4s;
-    display: none;    
+    display: none;
   }
+
+  /* .quote-form-container form{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out; 
+  }
+  .quote-form-container form{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out; 
+  } */
 
   .quote-form-container.is-active{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    /* visibility: visible;
+    opacity: 1; */
   }
 
   .quote-form-container .form-container{
@@ -1149,12 +1165,40 @@ nav{
   transition: 0.5s;
 } */
 
+.hidden {
+  display: none;
+}
+.input-group{
+  display:flex;
+  align-items: center;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  /* position: absolute; */
+  top: 60px; 
+  right: 5px;
+  pointer-events: none;
+  z-index: 2;
+}
+  .icon.icon-success {
+    fill: var(--primary);
+}
+  
+  .icon.icon-error {
+    fill: var(--error);
+ }
+
 .form{
   width: 280px;
   position: absolute;
   top: 100px;
   left: 40px;
   transition: 0.5s;
+}
+
+.form h3{
+  margin-bottom: 25px;
 }
 
 .form textarea{

@@ -114,23 +114,51 @@
           <h4>GET A FREE QUOTE</h4>
           <div class="form-container">
             <div class="container">
-              <form action="">
+              <form action="" class="q-form">
                 <div id="Form1" class="form">
                   <h3>Vehicle Details</h3>
-                  <input
-                    name="address_from"
-                    type="text"
-                    placeholder="Collection address"
-                    required
-                  />
-                  <input
-                    name="address_to"
-                    type="text"
-                    placeholder="Dilivery address"
-                    required
-                  />
-                  <input name="date" type="date" placeholder="Date" required />
-                  <input name="time" type="time" placeholder="Time" required />
+                  <div class="input-group">
+                    <input
+                      name="reg_number"
+                      id="reg_number"
+                      type="text"
+                      placeholder="Vehicle registration"
+                      required
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <textarea
+                    name="comment"
+                    id=""
+                    cols="35"
+                    rows="10"
+                    placeholder="Tell us any relevant information about the vehicle: running, shell, more than one vehicle to transport..."
+                  ></textarea>
                   <div class="btn-box">
                     <button type="button" id="next1">Next</button>
                   </div>
@@ -138,9 +166,147 @@
 
                 <div id="Form2" class="form">
                   <h3>Contact Information</h3>
-                  <input name="name" type="text" placeholder="Name" />
-                  <input name="phone" type="text" placeholder="Phone Number" />
-                  <input name="email" type="email" placeholder="E-mail" />
+                  <div class="input-group">
+                    <input
+                      name="address_from"
+                      id="address_from"
+                      type="text"
+                      placeholder="Collection address"
+                      required
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      name="address_to"
+                      id="address_to"
+                      type="text"
+                      placeholder="Dilivery address"
+                      required
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      name="date"
+                      id="date"
+                      type="date"
+                      placeholder="Date"
+                      required
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      name="time"
+                      id="time"
+                      type="time"
+                      placeholder="Time"
+                      required
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
                   <div class="btn-box">
                     <button type="button" id="back1">Back</button>
                     <button type="button" id="next2">Next</button>
@@ -149,11 +315,113 @@
 
                 <div id="Form3" class="form">
                   <h3>Additional Comments</h3>
+                  <div class="input-group">
+                    <input
+                      name="name"
+                      id="name"
+                      type="text"
+                      placeholder="Name"
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      name="phone"
+                      id="phone"
+                      type="tel"
+                      placeholder="Phone Number"
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      name="email"
+                      id="email"
+                      type="email"
+                      placeholder="E-mail"
+                    />
+                    <span class="error-message"></span>
+                    <svg
+                      class="icon icon-success hidden hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <svg
+                      class="icon icon-error hidden"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
                   <textarea
                     name="comment"
                     id=""
-                    cols="30"
-                    rows="10"
+                    cols="35"
+                    rows="5"
                     placeholder="Let us know of any additional information or special instructions."
                   ></textarea>
                   <div class="btn-box">
