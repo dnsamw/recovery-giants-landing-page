@@ -747,6 +747,10 @@ nav ul li a:hover{
     max-width: 650px;
   }
 
+.footer-text span a{
+  color: #777;
+  }
+
 .footer-text span a:link {
     text-decoration: none;
 }
