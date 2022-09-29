@@ -68,7 +68,7 @@ window.onload = function () {
       form2.style.left = "40px";
       progress.style.width = "240px";
     } else {
-      error.innerText = "please fill the required fileds.";
+      error.innerText = "Please complete all fields to proceed.";
     }
   };
 
@@ -84,7 +84,7 @@ window.onload = function () {
       form3.style.left = "40px";
       progress.style.width = "360px";
     } else {
-      error.innerText = "please fill the required fileds.";
+      error.innerText = "Please complete all fields to proceed.";
     }
   };
 
@@ -161,7 +161,7 @@ class FormValidator {
           self.validateFields(input);
         });
       } else {
-        error.innerText = "please fill the required fileds.";
+        error.innerText = "Please complete all fields to proceed.";
         e.preventDefault();
       }
     });
