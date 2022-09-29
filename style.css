@@ -505,6 +505,13 @@ nav ul li a:hover{
     justify-content: center;
 }
 
+#contact-card .phone{
+  margin-top: 10px;
+}
+#contact-card .address{
+  margin-bottom: 10px;
+}
+
 #contact-card .card-item  a{
   color: var(--white);
   }
