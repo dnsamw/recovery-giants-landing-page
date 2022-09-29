@@ -463,28 +463,41 @@ nav ul li a:hover{
 }
 
 .secondary-card h4{
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.card-col{
+  height: 550px;
 }
 
 #app-card{
   width: 300px;
-  height: 550px;
+  /* height: 550px; */
+  height: 30%;
+  margin-top: 10%;
+}
+
+#contact-card{
+  width: 300px;
+  color: var(--white);
 }
 
 #app-card .card-icon{
   display: flex;
   justify-content: center;
-  margin: 40px 15px;
+  margin: 15px;
 }
 
 #app-card h4{
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 #app-card p{
   color: var(--white);
-  margin: 40px 15px;
+  /* margin: 15px; */
 }
 
 #app-card .card-icon i{
