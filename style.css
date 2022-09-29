@@ -480,8 +480,10 @@ nav ul li a:hover{
 }
 
 #contact-card{
-  width: 300px;
+  /* width: 300px; */
+  width: auto;
   color: var(--white);
+  max-width: 800px !important;
 }
 
 #app-card .card-icon{
