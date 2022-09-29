@@ -145,7 +145,7 @@ html {
 }
 
 .banner-col .circle i{
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 0;
   display: block;
    margin-bottom: -1px;
@@ -772,7 +772,8 @@ nav ul li a:hover{
     max-height: 45vh;
   }
   .banner-col .circle i {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding-right: 2px;
   }
   .banner-col p {
     font-size: 1rem;
