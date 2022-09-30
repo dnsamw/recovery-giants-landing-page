@@ -716,10 +716,18 @@ nav ul li a:hover{
 
    .swiper-slide{
     min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    }
 
    .swiper-slide .card-content .description{
     padding-top: 15px;
+    font-size: 1rem;
+   }
+
+   .swiper-slide .card-content .name{
+    font-size: 1.5rem;
    }
 
   .swiper-navBtn{
