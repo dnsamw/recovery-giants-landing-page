@@ -660,7 +660,7 @@
     <div class="section" id="Help">
       <div>
         <div class="heading-box">
-          <h2 class="bold-heading-dark">Need Some Help?</h2>
+          <h2 class="bold-heading-dark">Need Our Help?</h2>
         </div>
 
         <div class="cards-holder">
@@ -707,8 +707,19 @@
               <div class="form-container">
                 <form action="" method="get">
                   <div class="input-field">
+                    <label for="email">Name:</label>
+                    <input
+                      required
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="eg: Jane Doe"
+                    />
+                  </div>
+                  <div class="input-field">
                     <label for="email">E-mail:</label>
                     <input
+                      required
                       type="text"
                       name="email"
                       id="email"
@@ -716,12 +727,23 @@
                     />
                   </div>
                   <div class="input-field">
+                    <label for="phone">Phone:</label>
+                    <input
+                      required
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="+1234567890"
+                    />
+                  </div>
+                  <div class="input-field">
                     <label for="message">Message :</label>
                     <textarea
+                      required
                       id="message"
                       name="message"
                       cols="30"
-                      rows="10"
+                      rows="5"
                       placeholder="Tell us any relevant information about the vehicle: running, shell, more than one vehicle to transport..."
                     ></textarea>
                   </div>
